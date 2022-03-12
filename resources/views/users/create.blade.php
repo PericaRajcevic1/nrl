@@ -1,0 +1,65 @@
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="btn btn-primary">
+            Stvori korisnički račun
+        </h2>
+    </x-slot>
+
+    <div>
+        <div class="max-w-4xl mx-auto py-10 sm:px-6 lg:px-8">
+            <div class="mt-5 md:mt-0 md:col-span-2">
+            <div class="block mb-8">
+                <a href="{{ route('users.index') }}" class="btn btn-primary">Nazad na popis korisnika</a>
+            </div>
+                <form method="post" action="{{ route('users.store') }}">
+                    @csrf
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="name" class="block font-medium text-sm text-gray-700">Korisničko ime</label>
+                            <input type="text" name="name" id="name" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('name', '') }}" />
+                            @error('name')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="email" class="block font-medium text-sm text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('email', '') }}" />
+                            @error('email')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="password" class="block font-medium text-sm text-gray-700">Lozinka</label>
+                            <input type="password" name="password" id="password" class="form-input rounded-md shadow-sm mt-1 block w-full" />
+                            @error('password')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="roles" class="block font-medium text-sm text-gray-700">Role</label>
+                            <select name="roles[]" id="roles" class="form-multiselect block rounded-md shadow-sm mt-1 block w-full" multiple="multiple">
+                                @foreach($roles as $id => $role)
+                                    <option value="{{ $id }}"{{ in_array($id, old('roles', [])) ? ' selected' : '' }}>{{ $role }}</option>
+                                @endforeach
+                            </select>
+                            @error('roles')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button class="btn btn-primary">
+                                Stvori račun
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</x-app-layout>

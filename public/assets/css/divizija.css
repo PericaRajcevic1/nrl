@@ -1,0 +1,236 @@
+.driver-list-header{
+    padding:10px 0 0 0;
+    font-size: 28px;
+}
+.driver-list-series-links{
+    font-size: 15px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+.entry-content table.driver-list-table{
+    width:100%;
+}
+.entry-content table.driver-list-table tr th {
+  text-align: center;
+  font-size: 14px;
+  font-family: stainless-bold;
+  background-color: #000000;
+  color:#fff;
+}
+
+.entry-content table.driver-list-table tr th:nth-child(3){
+  text-align: center;
+}
+.entry-content table.driver-list-table .driver-make-td img{
+    width: 25px;
+    margin: 0 auto;
+}
+.entry-content table.driver-list-table tr:nth-child(even) {
+  background-color: #fff;
+}
+.entry-content table.driver-list-table tr:nth-child(odd) {
+  background-color: #D6D5D5;
+}
+.entry-content table.driver-list-table td{
+    width:115px;
+    font-family: stainless-regular;
+  font-size: 14px;
+}
+.entry-content table.driver-list-table .driver-fav-td {
+  padding: 0 0 0 25px;
+  width: 25px;
+}
+.entry-content table.driver-list-table .driver-fav-td .fav-icon {
+  background: url("../img/fav-sprite2.png") no-repeat top left;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+.entry-content table.driver-list-table .driver-fav-td .fav-icon.favorite,
+.entry-content table.driver-list-table .driver-fav-td:hover .fav-icon,
+.entry-content table.driver-list-table .driver-fav-td .fav-icon:hover {
+  background-position: 0 -25px;
+}
+.entry-content table.driver-list-table .driver-number-td{
+    width:100px;
+}
+.entry-content table.driver-list-table .driver-name-td{
+    width:200px;
+}
+.entry-content table.driver-list-table .driver-team-td{
+    width:250px;
+    text-align: center;
+}
+.entry-content table.driver-list-table .driver-sponsor-td,
+.entry-content table.driver-list-table .driver-make-td,
+.entry-content table.driver-list-table .driver-team-td{
+    width: 250px;
+}
+.driver-list-series-links a.active {
+  text-decoration: underline;
+  color: #016699;
+}
+
+
+  .entry-content table.driver-list-table .driver-make-td img{
+  width: 60px;
+  display: inline-block;
+  padding-right: 14px;
+}
+.entry-content table.driver-list-table a,
+.entry-content table.driver-list-table .driver-number-td{
+  color: #2b2b2b;
+  font-weight: bold;
+}
+.entry-content table.driver-list-table td{
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 120px;
+}
+.entry-content table.driver-list-table .driver-name-td{
+  width: 180px;
+  line-height: 1.1;
+}
+.entry-content table.driver-list-table .driver-name-td .driver-first-name{
+  display: block;
+  font-size:1.2em;
+}
+.entry-content table.driver-list-table .driver-name-td .driver-last-name{
+  display: block;
+  font-size:1.8em;
+  font-weight: bolder;
+  font-family: Verdana, sans-serif;
+  color: #39393B;
+}
+.entry-content table.driver-list-table .driver-number-td{
+  font-size:2.85em;
+  text-align:center;
+  padding-left: 40px;
+  width: 85px;
+  font-family: stainless-black;
+  color: #39393B;
+}
+.entry-content table.driver-list-table .driver-headshot-td{
+  width: 100px;
+  padding-left: 15px;
+}
+.entry-content table.driver-list-table .driver-headshot-td img{
+  width: auto;
+}
+.entry-content table.driver-list-table .driver-make-td{
+  width:86px;
+  text-align:center;
+  padding-right: 0;
+}
+.entry-content table.driver-list-table .driver-team-td{
+  font-size:1.0em;
+  width: 300px;
+  padding: 10px 8px 8px 10px;
+}
+/* HIDE MOBILE ITEMS*/
+
+
+
+
+/* HIDE Desktop ITEMS*/
+.entry-content table.driver-list-table tr td.driver-headshot-td{
+  display: none;
+}
+.entry-content table.driver-list-table .driver-name-td.desktop{
+  display: none;
+}
+.entry-content table.driver-list-table .driver-name-td.mobile{
+  padding-left: 5px;
+}
+.entry-content table.driver-list-table .driver-fav-td {
+  padding: 10px 0 0 5px;
+  width: 14px;
+  vertical-align: top;
+}
+.entry-content table.driver-list-table .driver-fav-td .fav-icon {
+  background-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+.entry-content table.driver-list-table .driver-fav-td:hover .fav-icon,
+.entry-content table.driver-list-table .driver-fav-td .fav-icon:hover {
+  background-position: 0 0;
+}
+.entry-content table.driver-list-table .driver-fav-td .fav-icon.favorite {
+  background-position: 0 -15px;
+}
+
+
+
+.next-race-header-container .title {
+  padding-right: 0 !important;
+}
+.next-race-header-container .title {
+  display: inline-block !important;
+  padding-top: 15px !important;
+  height: auto !important;
+  padding-bottom: 15px !important;
+}
+  .next-race-header-container .title{
+  width: 100% !important;
+}
+span.series-link-outer {
+    display: block;
+}
+  .post-type-archive-drivers.full-width .entry-content{
+      padding: 0 10px;
+  }
+  .entry-content table.driver-list-table{
+    width:100%;
+  }
+
+  .driver-list-header,
+  .driver-list-series-links{
+      text-align: center;
+  }
+
+  .entry-content table.driver-list-table .driver-name-td{
+      width: 300px;
+      text-align: center;
+  }
+
+  .entry-content table.driver-list-table tr th{
+      font-family: Verdana, sans-serif;
+      text-align: center;
+  font-size:14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+  .header-general{
+    background: black;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+
+}
+    h1 {
+        color: white;
+        font-family: Fantasy;
+        @include mobile{
+            font-family: Fantasy;
+        }
+    };
+    p,
+    .nascar-advertisement{
+        display: inline-block;
+    }
+    p{
+        margin-bottom: 40px !important;
+    }
+    .nascar-advertisement{
+        margin-left: 10px;
+        padding: 0;
+    };
+
+    
+/* .next-race-header-container{
+  height: 168px !important;
+} */
+
